@@ -1,0 +1,23 @@
+Exercicio 1
+     #include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+    int *pont1, *pont2;
+    
+    pont1 = &num1;
+    pont2 = &num2;
+    
+    printf("Digite o primeiro valor: ");
+    scanf("%d", pont1);
+    printf("Digite o segundo valor: ");
+    scanf("%d", pont2);
+    
+    
+    printf("Soma dos valores: %d + %d = %d \n", *pont1, *pont2, (*pont1 + *pont2));
+    printf("Subtrção dos valores: %d - %d = %d \n", *pont1, *pont2, (*pont1 - *pont2));
+    printf("Divisão dos valores: %d / %d = %d \n", *pont1, *pont2, (*pont1 / *pont2));
+    printf("Multiplicalção dos valores: %d x %d = %d \n", *pont1, *pont2, (*pont1 * *pont2));
+    
+}
